@@ -41,6 +41,6 @@ public class Beer {
     private String upc;
 
     private BigDecimal price;
-    private Integer mineOnHand;
+    private Integer minOnHand;
     private Integer quantityToBrew;
 }
