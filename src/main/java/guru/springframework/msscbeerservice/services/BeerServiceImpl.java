@@ -43,7 +43,7 @@ public class BeerServiceImpl implements BeerService {
                     .getContent()
                     .stream()
                     .map(beerMapper::beerToBeerDto)
-                    .collect(Collectors.toList()),
+                    . collect(Collectors.toList()),
                     PageRequest.of(beerPage.getPageable().getPageNumber(),
                                         beerPage.getPageable().getPageSize()),
                     beerPage.getTotalElements());
