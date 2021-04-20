@@ -30,7 +30,7 @@ public class BrewingService {
 
         beers.forEach(beer -> {
             Integer invQOH = beerInventoryService.getOnHandInventory(beer.getId());
-
+            log.info("Checking inventory for : " + beer.getBeerName() + " / " + beer.getId());
             log.info("Min onhand is : " + beer.getMinOnHand());
             log.info("Inventory is : " + invQOH);
 
